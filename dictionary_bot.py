@@ -256,8 +256,6 @@ async def reaction_handling(reaction, user):
                 'audio', reaction.message.guild.id, channel)
             voice = discord.utils.get(
                 client.voice_clients, guild=reaction.message.guild)
-            print(voice)
-            print(client.voice_clients)
             if voice is not None:
                 if voice.channel != user.voice.channel:
                     voice = await voice.move_to(user.voice.channel)
@@ -414,7 +412,6 @@ async def gc(ctx, *, args):
                 if not row['简'] is np.nan:
                     embed_name += f"/{row['简']}"
                 embed_name = remove_format(embed_name)
-                # alt_mean = [alt for alt in hed_usage(index) if search in alt]
                 value = f"```{row['英译与词句']}```\n"
                 
                 embed.add_field(name=embed_name, value=remove_format(value),
@@ -487,7 +484,6 @@ async def gc(ctx, *, args):
         await sent_embed.add_reaction(emoji_list.books)
 
     add_to_master(embed_list, sent_embed)
-
 
 
 @client.command()
@@ -769,6 +765,24 @@ async def pause(ctx):
                     channel as the bot to use this command!")
         else:
             await voice.pause()
+    else:
+        await ctx.send(
+            content=f"{ctx.author.mention} please connect to a voice channel \
+                to use this command!", delete_after=30)
+
+
+@client.command()
+async def resume(ctx):
+    if ctx.author.voice:
+        channel = ctx.author.voice.channel
+        voice = discord.utils.get(client.voice_clients, guild=ctx.guild)
+        if channel != voice:
+            await ctx.send(
+                content=f"{ctx.author.mention} you need to be in the same \
+                    channel as the bot to use this command!")
+        else:
+            if voice.is_paused():
+                await voice.resume()
     else:
         await ctx.send(
             content=f"{ctx.author.mention} please connect to a voice channel \

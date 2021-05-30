@@ -1,0 +1,57 @@
+{
+    "1": {
+        "title": "Sze Yap Bot Help Pages!",
+        "name": "Sze Yap Taishanese Dictionary Bot",
+        "value": "Hello there! It's me, Do-En! I'm a dictionary bot based on [Gene Chin's Hoisanva English Dictionary](https://sites.fitnyc.edu/users/gene_chin/hed/index.htm) and [Stephen Li's Taishanese Dictionary](https://stephen-li.com/WebTemplates/greencreative/taishanese.html)\nReact with the arrows to see the commands!\nYou can also use commands in a DM channel with the bot!\n\nIf you are still confused after reading this guide or want to talk join the [Du-Ein support server!](https://discord.gg/mbw7rZkPG4)\n\nSpecial thanks to [suspiciouscactus](https://github.com/suspiciouscactus) for an extract of Stephen Li's dictionary.\nThis bot is inspired by Kaoffie's Yulin Bot! [Go check out their github!](https://github.com/Kaoffie)", 
+        "colour": [161, 202, 255]
+    },
+    "2": {
+        "title": "Help Commands",
+        "name": "{prefix}gc ***word***",
+        "value": "Use {prefix}gc ***word*** to search [Gene Chin's Hoisanva English Dictionary](https://sites.fitnyc.edu/users/gene_chin/hed/index.htm)\n__Examples:__\nEnglish Search: {prefix}gc dictionary\nChinese Search: {prefix}gc 字典, {prefix}gc 樂\nPinyin Search: {prefix}gc lok32 (only supports single word search)",
+        "colour": [250, 241, 160]
+    },
+    "3": {
+        "title": "Help Commands",
+        "name": "{prefix}sl ***word***",
+        "value": "Use {prefix}sl ***word*** to search [Stephen Li's Taishanese Dictionary](https://stephen-li.com/WebTemplates/greencreative/taishanese.html)\n__Examples:__\nEnglish Search: {prefix}sl break\nChinese Search: {prefix}sl 樂\n",
+        "colour": [250, 241, 160]
+    },
+    "4": {
+        "title": "Help Commands",
+        "name": "{prefix}penyim ***word***",
+        "value": "Use {prefix}penyim ***word*** to convert chinese characters to penyim\n__Examples:__\n{prefix}penyim 可以嗎",
+        "colour": [250, 241, 160]
+    },
+    "5": {
+        "title": "Help Commands",
+        "name": "{prefix}leave_channel",
+        "value": "Use {prefix}leave_channel to tell the bot to leave the channel you are currently in",
+        "colour": [250, 241, 160]
+    },
+    "6": {
+        "title": "Help Commands",
+        "name": "{prefix}pause",
+        "value": "Pause audio that is currently playing\nRequires you be in the same vc as the bot",
+        "colour": [250, 241, 160]
+    },
+    "7": {
+        "title": "Help Commands",
+        "name": "{prefix}hoisan_sauce",
+        "value": "Play a random hoisan sauce youtube video! use +pause to stop the audio!",
+        "colour": [250, 241, 160]
+    },
+
+    "8": {
+        "title": "Picture Credits",
+        "name": "Most of the pictures provided by Ace Dystopia#2150!",
+        "value": "Links to the other pictures:\nhttps://www.thebeijinger.com/blog/2018/09/20/guangdong-heritage-visiting-diaolou-around-kaiping\nhttps://en.wikipedia.org/wiki/Taishan,_Guangdong\nhttp://www.chinapictorial.com.cn/en/snapshot/txt/2016-01/12/content_711068.htm",
+        "colour": [250, 241, 160]
+    },
+    "9": {
+        "title": "Sze Yap Bot", 
+        "name": "Sze Yap Bot created by pigpigchui#0753",
+        "value": "[Source code on Github](https://github.com/cheap-ghetto)",
+        "colour": [250, 241, 160]
+    }
+}
